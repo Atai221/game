@@ -1,0 +1,63 @@
+$primaryColor: #11151c;
+$secondaryColor: #7d4e57;
+$linkColor: #d66853;
+$linkHoverColor: #212d40;
+$titleFontSize: 24px;
+$linkFontSize: 24px;
+$linkHoverFontSize: 30px;
+
+.container {
+	display: flex;
+	align-items: center;
+	height: 120px;
+	margin: -3px auto;
+	border: 3px solid $primaryColor;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 60%;
+		height: 100%;
+		word-break: break-word;
+		padding: 10px;
+		margin: 0;
+		color: $secondaryColor;
+		font-size: $titleFontSize;
+		text-transform: uppercase;
+	}
+
+	.list {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		.item {
+			list-style: none;
+			width: 100%;
+
+			.link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: $linkColor;
+				border-left: 3px solid $primaryColor;
+				font-size: $linkFontSize;
+				width: 100%;
+				height: 114px;
+				transition: .5s;
+
+				&:hover {
+					background-color: $secondaryColor;
+					color: $linkHoverColor;
+					font-size: $linkHoverFontSize;
+				}
+			}
+		}
+	}
+}
